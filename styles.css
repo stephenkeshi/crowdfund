@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --color__primary__Moderate-cyan: hsl(176, 50%, 47%);
+    --color__primary__Dark-cyan: hsl(176, 72%, 28%);
+    --color__neutral__Black: hsl(0, 0%, 0%);
+    --color__neutral__Dark-gray: hsl(0, 0%, 48%);
+    --color__neutral__Light-gray: hsla(0, 10%, 92%, 0.842);
+    --color__primary__transparent-rgba: rgba(250, 248, 248, 0.829);
+    --color__primary__white: #fff;
+
+    --style__font__size: 1rem;
+
+    --style__nav__content--top: 2rem;
+    --style__nav__position__right-left: 8rem;
+    --style__card__padding: 2rem;
+    --style__card__margin-top: 2rem;
+
+    --style__transition: 300ms ease;
+}
+
+a:-webkit-any-link {
+    color: var(--color__primary__white);
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color__primary__transparent-rgba);
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.logo__content {
+    position: fixed;
+    top: var(--style__nav__content--top);
+    left: var(--style__nav__position__right-left);
+    cursor: pointer;
+}
+
+.hero--img__display__container img {
+    width: 100%;
+}
+
+.navigation__container {
+    position: fixed;
+    top: var(--style__nav__content--top);
+    right: var(--style__nav__position__right-left);
+}
+
+.navigation__container .list__items {
+    display: flex;
+    gap: 2rem;
+    transition: var(--style__transition);
+}
+
+.overall__transformation__container {
+    position: absolute;
+    top: 18rem;
+    left: calc((85rem - 45rem) / 2.485);
+}
+
+.card__component__container {
+    width: 45rem;
+    background: var(--color__primary__white);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.card__wrapper__container {
+    padding: var(--style__card__padding);
+    margin-bottom: 5rem;
+}
+
+.card__wrapper__container .header__contents {
+    text-align: center;
+}
+
+.card__wrapper__container .header__img {
+    position: absolute;
+    top: -1.8rem;
+    left: 20.5rem;
+}
+
+.header__contents > h1 {
+    margin-top: 1.5rem;
+}
+
+.header__contents > p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color__neutral__Dark-gray);
+}
+
+.btn__component__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.btn__component__container button {
+    padding: 0 4rem;
+    border-radius: 2rem;
+    background: var(--color__primary__Moderate-cyan);
+    color: var(--color__primary__white);
+    cursor: pointer;
+}
+
+.book--mark__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.book--mark__container > p {
+    color: var(--color__neutral__Dark-gray);
+    padding: 1.2rem 3rem;
+    background: var(--color__neutral__Light-gray);
+    border-radius: 2rem;
+    margin-left: 1.2rem;
+    font-weight: bold;
+}
+
+.book--mark__container img {
+    position: absolute;
+}
+
+.card--fund__container__display {
+    margin-top: var(--style__card__margin-top);
+}
+
+.funding__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.funding__container p {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    color: var(--color__neutral__Dark-gray);
+}
+
+.line__through__container {
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: var(--color__primary__Moderate-cyan);
+    bottom: 1rem;
+}
+
+.line__through__whitespaces {
+    position: absolute;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background: var(--color__primary__transparent-rgba);
+    right: 0;
+    top: 0;
+}
+
+.about__project__container > h2 {
+    margin-top: var(--style__card__margin-top);
+    margin-bottom: var(--style__card__margin-top);
+}
+
+.about__project__container .about__desc > p {
+    color: var(--color__neutral__Dark-gray);
+    margin-bottom: var(--style__card__margin-top);
+}
+
+.bamboo__container {
+    border: 1px solid var(--color__neutral__Light-gray);
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    padding: var(--style__card__margin-top);
+}
+
+.bamboo__container .bamboo--sub__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bamboo--sub__title > p {
+    color: var(--color__primary__Moderate-cyan);
+    font-weight: bold;
+}
+
+.bamboo__title > p {
+    color: var(--color__neutral__Dark-gray);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bamboo--btn__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bamboo--btn__container span {
+    position: absolute;
+    font-size: 1rem;
+    color: var(--color__neutral__Dark-gray);
+    font-weight: normal;
+    top: 0.5rem;
+}
+
+.bamboo--btn__container > p {
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    background: var(--color__primary__Moderate-cyan);
+    color: var(--color__primary__white);
+    cursor: pointer;
+}
+
+.disable--opacity__bamboo__container {
+    opacity: 0.3;
+}
+
+.bamboo--btn__container > .disable--opacity__btn {
+    background: var(--color__neutral__Dark-gray);
+}
+
+/* select__reward section style */
+
+.select__reward__container {
+    width: 45rem;
+    top: -10rem;
+    left: calc((85rem - 45rem) / 2.485);
+    border-radius: 0.5rem;
+    background: var(--color__primary__white);
+    padding: 2rem;
+}
+
+
+.opacity {
+    opacity: 0.5 ;
+}
+
+.onClick__body {
+    background: var(--color__neutral__Dark-gray);
+
+}
+
+.about__project__container img {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.no--reward__container,
+.select__reward__container {
+    position: relative;
+}
+
+.no--reward__container .label__container {
+    margin-left: 2rem;
+}
+
+.no--reward__container .label__container > label,
+.reward__pledges > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.no--reward__container input {
+    position: absolute;
+    top: 0.3rem;
+}
+
+
+.label__container > p {
+    color: var(--color__neutral__Dark-gray);
+    margin-top: 1rem;
+}
+
+.pledge--days__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reward__pledges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.moderate {
+    color: var(--color__primary__Moderate-cyan);
+    font-weight: bold;
+}
+
+.days__left {
+    position: relative;
+}
+
+.days__left span {
+    position: absolute;
+    font-size: 1rem;
+    color: var(--color__neutral__Dark-gray);
+    font-weight: normal;
+    top: 0rem;
+    left: 2rem;
+}
+
+.days__left .single__letter--span {
+    left: 1rem;
+}
+
+.days__left .double__letters--span {
+    left: 1.5rem;
+}
+
+/* support msg section styles */
+
+.support__msg__container {
+    width: 30rem;
+    background: var(--color__primary__white);
+    position: absolute;
+    top: 10rem;
+    left: calc((45rem - 30rem) / 2);
+    border-radius: 0.5rem;
+}
+
+.wrapper__support__container {
+    padding: var(--style__card__margin-top);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper__support__container .verified__icon {
+    margin-top: 1rem;
+}
+
+.support__contents__container  > h1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.support__contents__container > p {
+    margin-bottom: 2rem;
+    color: var(--color__neutral__Dark-gray);
+}
+
+.btn__container button { 
+    padding: 0.9rem 2rem;
+    background: var(--color__primary__Moderate-cyan);
+    border: none;
+    border-radius: 2rem;
+    color: var(--color__primary__white);
+}
+
+
+/* display__none section */
+.display__none {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  
+    .container {
+      width: 100%;
+    }
+  
+    h2 {
+      font-style: 1.6rem;
+    }
+  
+    h3 {
+      font-style: 1.2rem;
+    }
+  
+    h5 {
+      font-style: 0.8rem;
+    }
+
+    .logo__content {
+        left: 2.5rem;
+    }
+
+    .list__items {
+        position: fixed;
+        right: 1.5rem;
+        gap: 1rem;
+    }
+
+    .overall__transformation__container {
+        top: -3rem;
+        left: 1rem;
+        left: 0;
+        position: relative;
+    }
+
+    .card__component__container {
+        width: 35rem;
+    }
+
+    .header__contents h1 {
+        font-size: 1.8rem;
+    }
+
+    .header__contents p {
+        font-size: 1.12rem;
+    }
+
+    .header__img img {
+        width: 3rem;
+    }
+
+   .btn__component__container {
+     font-size: 0.8rem;
+   }
+
+   .select__reward__container {
+    width: 35rem;
+    top: -120rem;
+    left: 3.9rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+    
+      h2 {
+        font-size: 0.9rem;
+      }
+    
+      h3 {
+        font-size: 0.8rem;
+      }
+    
+      h5 {
+        font-size: 0.6rem;
+      }
+  
+      .logo__content {
+          left: 1.5rem;
+      }
+  
+      .overall__transformation__container {
+        top: -1.3rem;
+      }
+
+      .card__component__container {
+        width: 20rem;
+      }
+
+      .header__img img {
+        display: none;
+      }
+
+      .btn__component__container {
+        flex-direction: column;
+      }
+
+      .btn__component__container button {
+        padding: 0.4rem 0.5rem;
+      }
+
+      .book--mark__container {
+        display: none;
+      }
+
+      .navigation__container .list__items {
+        display: none;
+      }
+
+      .header__contents h1 {
+        font-size: 1.5rem;
+      }
+
+      .bamboo--btn__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bamboo--btn__container p {
+          padding: 0.4rem 0.5rem;
+          text-align: center;
+      }
+     .bamboo--sub__title {
+        flex-direction: column;
+        gap: 0.5rem;
+     }
+     
+     .select__reward__container {
+        width: 20rem;
+        top: -134rem;
+        left: 1.7rem;
+     }
+
+     .bamboo__container {
+        display: flex;
+        flex-direction: column;
+     }
+}
